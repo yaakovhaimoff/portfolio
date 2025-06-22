@@ -1,6 +1,7 @@
 {
   "projects": {
-    "default": "flutter-portfolio-a34b6"
+    "default": "myportfolio-9a480",
+    "staging": "myportfolio-9a480"
   },
   "targets": {
     "flutter-portfolio-a34b6": {
