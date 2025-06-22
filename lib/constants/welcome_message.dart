@@ -1,0 +1,1 @@
+const welcomeMessage = "Hi! I'm Yaakov Haimoff,\na backend software engineer\nfocused on building reliable, scalable systems.";

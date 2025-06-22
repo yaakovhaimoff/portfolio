@@ -1,0 +1,1 @@
+const aboutMe = "At LiveU, I contributed to production-grade backend systems using Python. I developed features, resolved bugs, and collaborated with QA to ensure stability and maintainability. I enjoy solving complex problems, learning new tools, and continuously improving my craft.";
