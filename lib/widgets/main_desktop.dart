@@ -78,14 +78,14 @@ class MainDesktop extends StatelessWidget {
                   ElevatedButton.icon(
                     onPressed: () {
                       html.AnchorElement()
-                        ..href = '/web/assets/yaakov_haimoff.pdf'
+                        ..href = '/assets/yaakov_haimoff.pdf'
                         ..download = 'Yaakov_Haimoff_CV.pdf'
                         ..click();
                     },
                     icon: const Icon(Icons.download),
                     label: const Text("Download CV"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: CustomColor.yellowPrimary,
+                      backgroundColor: const Color(0xfff2a833),
                       foregroundColor: CustomColor.whitePrimary,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 30, vertical: 20),
@@ -103,12 +103,12 @@ class MainDesktop extends StatelessWidget {
                       onGetInTouchTap(3);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: CustomColor.yellowPrimary,
+                      backgroundColor: const Color(0xfff2a833),
                       foregroundColor: CustomColor.whitePrimary,
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 30, vertical: 20),
+                          horizontal: 40, vertical: 25),
                       textStyle: const TextStyle(
-                        fontSize: 16,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                     ),

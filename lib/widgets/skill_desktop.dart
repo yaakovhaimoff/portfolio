@@ -14,7 +14,6 @@ class SkillsDesktop extends StatelessWidget {
       children: [
         // Soft Skills column
         Column(
-          // crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisSize: MainAxisSize.min,
           children: [
             const Padding(
@@ -66,7 +65,6 @@ class SkillsDesktop extends StatelessWidget {
         // Technical Skills column
         Expanded(
           child: Column(
-            // crossAxisAlignment: CrossAxisAlignment.start,
             mainAxisSize: MainAxisSize.min,
             children: [
               const Padding(

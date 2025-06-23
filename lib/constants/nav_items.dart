@@ -13,5 +13,5 @@ List<IconData> navIcons = [
   Icons.handyman_outlined,
   Icons.apps,
   Icons.quick_contacts_mail,
-  Icons.web,
+  // Icons.web,
 ];

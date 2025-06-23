@@ -12,8 +12,7 @@ class SiteLogo extends StatelessWidget {
             child: const SelectableText("YH",style: TextStyle(
               fontSize: 22,
               fontWeight: FontWeight.bold,
-              decoration: TextDecoration.underline,
-              color: CustomColor.yellowSecondary
+              color: CustomColor.whiteSecondary,
             ),),
           );
   }
