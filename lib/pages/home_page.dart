@@ -83,7 +83,8 @@ class _HomePageState extends State<HomePage> {
 									padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
 									color: CustomColor.bgLight1,
 									child: Column(
-										crossAxisAlignment: CrossAxisAlignment.start,
+										// crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
 										children: [
 											//title
 											const SelectableText("What I can do", style: TextStyle(

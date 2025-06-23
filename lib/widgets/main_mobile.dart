@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:my_portfolio/constants/welcome_message.dart';
-import 'package:my_portfolio/constants/about_me.dart';
+import 'dart:html' as html;
+
 import '../constants/colors.dart';
+import '../constants/welcome_message.dart';
+import '../constants/about_me.dart';
 
 class MainMobile extends StatelessWidget {
   const MainMobile({
@@ -20,7 +22,7 @@ class MainMobile extends StatelessWidget {
     return Container(
       margin: const EdgeInsets.symmetric(horizontal: 40, vertical: 30),
       height: screenHeight,
-      constraints: const BoxConstraints(maxHeight: 600),
+      constraints: const BoxConstraints(maxHeight: 650),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
@@ -68,25 +70,51 @@ class MainMobile extends StatelessWidget {
           ),
           const SizedBox(height: 30),
 
-          // Get in touch button
-          SizedBox(
-            width: 180,
-            child: ElevatedButton(
-              onPressed: () {
-                onGetInTouchTap(3);
-              },
-              style: ElevatedButton.styleFrom(
-                backgroundColor: CustomColor.yellowPrimary,
-                foregroundColor: CustomColor.whitePrimary,
-                padding:
-                    const EdgeInsets.symmetric(horizontal: 40, vertical: 25),
-                textStyle: const TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
+          // Buttons row
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            children: [
+              // Download CV button
+              ElevatedButton.icon(
+                onPressed: () {
+                  html.AnchorElement()
+                    ..href = 'assets/yaakov_haimoff.pdf'
+                    ..download = 'Yaakov_Haimoff_CV.pdf'
+                    ..click();
+                },
+                icon: const Icon(Icons.download),
+                label: const Text("Download CV"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: CustomColor.yellowPrimary,
+                  foregroundColor: CustomColor.whitePrimary,
+                  padding: const EdgeInsets.symmetric(
+                      horizontal: 20, vertical: 20),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
                 ),
               ),
-              child: const Text("Get in touch"),
-            ),
+              const SizedBox(width: 20),
+
+              // Get in touch button
+              ElevatedButton(
+                onPressed: () {
+                  onGetInTouchTap(3);
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: CustomColor.yellowPrimary,
+                  foregroundColor: CustomColor.whitePrimary,
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 20, vertical: 20),
+                  textStyle: const TextStyle(
+                    fontSize: 16,
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                child: const Text("Get in touch"),
+              ),
+            ],
           ),
         ],
       ),

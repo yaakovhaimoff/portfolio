@@ -11,12 +11,13 @@ class SkillsMobile extends StatelessWidget {
     return ConstrainedBox(
       constraints: const BoxConstraints(maxHeight: 800.0),
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        // crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisSize: MainAxisSize.min,
         children: [
           // Soft Skills title
           const Padding(
             padding: EdgeInsets.only(bottom: 12.0),
-            child: Text(
+            child: SelectableText(
               "Soft Skills",
               style: TextStyle(
                 fontSize: 20,
@@ -51,7 +52,7 @@ class SkillsMobile extends StatelessWidget {
           // Technical Skills title
           const Padding(
             padding: EdgeInsets.only(bottom: 12.0),
-            child: Text(
+            child: SelectableText(
               "Technical Skills",
               style: TextStyle(
                 fontSize: 20,

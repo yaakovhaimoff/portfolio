@@ -14,11 +14,12 @@ class SkillsDesktop extends StatelessWidget {
       children: [
         // Soft Skills column
         Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
+          // crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisSize: MainAxisSize.min,
           children: [
             const Padding(
               padding: EdgeInsets.only(bottom: 12.0),
-              child: Text(
+              child: SelectableText(
                 "Soft Skills",
                 style: TextStyle(
                   fontSize: 20,
@@ -65,11 +66,12 @@ class SkillsDesktop extends StatelessWidget {
         // Technical Skills column
         Expanded(
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            // crossAxisAlignment: CrossAxisAlignment.start,
+            mainAxisSize: MainAxisSize.min,
             children: [
               const Padding(
                 padding: EdgeInsets.only(bottom: 12.0),
-                child: Text(
+                child: SelectableText(
                   "Technical Skills",
                   style: TextStyle(
                     fontSize: 20,
