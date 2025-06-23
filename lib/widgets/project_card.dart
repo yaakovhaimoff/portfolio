@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/utils/project_utils.dart';
+import 'package:my_portfolio/utils/project_utils.dart';
 
 import '../constants/colors.dart';
 import 'dart:js' as js;

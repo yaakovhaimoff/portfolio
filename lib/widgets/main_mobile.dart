@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants/welcome_message.dart';
-import 'package:flutter_application_1/constants/about_me.dart';
+import 'package:my_portfolio/constants/welcome_message.dart';
+import 'package:my_portfolio/constants/about_me.dart';
 import '../constants/colors.dart';
 
 class MainMobile extends StatelessWidget {

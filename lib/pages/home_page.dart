@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_application_1/constants/colors.dart';
-import 'package:flutter_application_1/constants/sns_link.dart';
-import 'package:flutter_application_1/widgets/contacts_section.dart';
-import 'package:flutter_application_1/widgets/footer.dart';
-import 'package:flutter_application_1/widgets/main_mobile.dart';
-import 'package:flutter_application_1/widgets/skill_mobile.dart';
+import 'package:my_portfolio/constants/colors.dart';
+import 'package:my_portfolio/constants/sns_link.dart';
+import 'package:my_portfolio/widgets/contacts_section.dart';
+import 'package:my_portfolio/widgets/footer.dart';
+import 'package:my_portfolio/widgets/main_mobile.dart';
+import 'package:my_portfolio/widgets/skill_mobile.dart';
 import 'dart:js' as js;
 import '../constants/size.dart';
 import '../widgets/drawer_mobile.dart';

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_application_1/constants/sns_link.dart';
+import 'package:my_portfolio/constants/sns_link.dart';
 import '../constants/colors.dart';
 import 'dart:js' as js;
 

@@ -1,7 +1,7 @@
 {
   "target": "flutter-portfolio-a34b6",
   "hosting": {
-    "public": "public",
+    "public": "build/web",
     "ignore": [
       "firebase.json",
       "**/.*",
