@@ -85,7 +85,8 @@ class MainDesktop extends StatelessWidget {
                     icon: const Icon(Icons.download),
                     label: const Text("Download CV"),
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xfff2a833),
+                      backgroundColor: const Color.fromARGB(255, 19, 20, 27),
+                      // backgroundColor: const Color(0xfff2a833),
                       foregroundColor: CustomColor.whitePrimary,
                       padding: const EdgeInsets.symmetric(
                           horizontal: 30, vertical: 20),
@@ -103,17 +104,19 @@ class MainDesktop extends StatelessWidget {
                       onGetInTouchTap(3);
                     },
                     style: ElevatedButton.styleFrom(
-                      backgroundColor: const Color(0xfff2a833),
+                      backgroundColor: const Color.fromARGB(255, 19, 20, 27),
+                      // backgroundColor: const Color(0xfff2a833),
                       foregroundColor: CustomColor.whitePrimary,
                       padding: const EdgeInsets.symmetric(
-                          horizontal: 40, vertical: 25),
+                          horizontal: 30, vertical: 20),
                       textStyle: const TextStyle(
-                        fontSize: 18,
+                        fontSize: 16,
                         fontWeight: FontWeight.bold,
                       ),
                     ),
                     child: const Text("Get in touch"),
                   ),
+                  const SizedBox(width: 20),
                 ],
               ),
             ],

@@ -35,7 +35,8 @@ class _HomePageState extends State<HomePage> {
     return LayoutBuilder(builder: (context, constraints) {
       return Scaffold(
         key: scaffoldKey,
-        backgroundColor: CustomColor.scaffoldBg,
+        backgroundColor: const Color(0xFF0b0c10),
+        // backgroundColor: CustomColor.scaffoldBg,
         endDrawer: constraints.maxWidth >= kMinDesktopWidth
             ? null
             : DrawerMobile(
@@ -88,7 +89,8 @@ class _HomePageState extends State<HomePage> {
                       key: navbarKeys[1],
                       width: screenWidth,
                       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-                      color: CustomColor.bgLight1,
+                      // color: CustomColor.bgLight1,
+                      color: const Color.fromARGB(255, 14, 15, 20),
                       child: Column(
                         mainAxisSize: MainAxisSize.min,
                         children: [

@@ -85,7 +85,7 @@ class MainMobile extends StatelessWidget {
                 icon: const Icon(Icons.download),
                 label: const Text("Download CV"),
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xfff2a833),
+                  backgroundColor: const Color.fromARGB(255, 19, 20, 27),
                   foregroundColor: CustomColor.whitePrimary,
                   padding: const EdgeInsets.symmetric(
                       horizontal: 20, vertical: 20),
@@ -103,7 +103,7 @@ class MainMobile extends StatelessWidget {
                   onGetInTouchTap(3);
                 },
                 style: ElevatedButton.styleFrom(
-                  backgroundColor: const Color(0xfff2a833),
+                  backgroundColor: const Color.fromARGB(255, 19, 20, 27),
                   foregroundColor: CustomColor.whitePrimary,
                   padding: const EdgeInsets.symmetric(
                     horizontal: 20, vertical: 20),
@@ -114,6 +114,7 @@ class MainMobile extends StatelessWidget {
                 ),
                 child: const Text("Get in touch"),
               ),
+              const SizedBox(width: 20),
             ],
           ),
         ],

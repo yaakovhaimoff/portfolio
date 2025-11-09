@@ -33,8 +33,13 @@ class SkillsMobile extends StatelessWidget {
               margin: const EdgeInsets.only(bottom: 5),
               width: double.maxFinite,
               decoration: BoxDecoration(
-                color: CustomColor.bgLight2,
+                color: const Color(0xFF0b0c10),
+                // color: CustomColor.bgLight2,
                 borderRadius: BorderRadius.circular(5),
+                border: Border.all(
+                          color: CustomColor.whitePrimary,
+                          width: 0.5,
+                        ),
               ),
               child: ListTile(
                 contentPadding:
@@ -72,7 +77,8 @@ class SkillsMobile extends StatelessWidget {
                 Chip(
                   padding: const EdgeInsets.symmetric(
                       vertical: 12, horizontal: 16),
-                  backgroundColor: CustomColor.bgLight2,
+                  backgroundColor: const Color(0xFF0b0c10),
+                  // backgroundColor: CustomColor.bgLight2,
                   label: SelectableText(skillItems[i]["title"]),
                   avatar: Image.asset(skillItems[i]["img"]),
                 ),

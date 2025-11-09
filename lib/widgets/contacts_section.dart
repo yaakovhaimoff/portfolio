@@ -12,7 +12,9 @@ class ContactsSection extends StatelessWidget {
     final double screenWidth = MediaQuery.of(context).size.width;
     return Container(
       padding: const EdgeInsets.fromLTRB(25, 20, 25, 60),
-      color: CustomColor.bgLight1,
+      // color: CustomColor.bgLight1,
+      // color: const Color(0xFF0b0c10),
+      color: const Color.fromARGB(255, 14, 15, 20),
       width: screenWidth,
       child: Column(
         children: [

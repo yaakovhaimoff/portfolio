@@ -39,8 +39,13 @@ class SkillsDesktop extends StatelessWidget {
                     Container(
                       width: 200,
                       decoration: BoxDecoration(
-                        color: CustomColor.bgLight2,
+                        color: const Color(0xFF0b0c10),
+                        // color: CustomColor.bgLight2,
                         borderRadius: BorderRadius.circular(5),
+                        border: Border.all(
+                          color: CustomColor.whitePrimary,
+                          width: 0.5,
+                        ),
                       ),
                       child: ListTile(
                         contentPadding: const EdgeInsets.symmetric(
@@ -88,7 +93,8 @@ class SkillsDesktop extends StatelessWidget {
                       Chip(
                         padding: const EdgeInsets.symmetric(
                             vertical: 12, horizontal: 16),
-                        backgroundColor: CustomColor.bgLight2,
+                        // backgroundColor: CustomColor.bgLight2,
+                        backgroundColor: const Color(0xFF0b0c10),
                         label: SelectableText(skillItems[i]["title"]),
                         avatar: Image.asset(skillItems[i]["img"]),
                       ),
